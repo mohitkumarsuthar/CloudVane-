@@ -25,19 +25,19 @@
             <p>Invalid name</p>
         </div>
         <div class="weather">
-            <img src="images/clouds.png" id="im" alt="imag">
+            <img src="clouds.png" id="im" alt="imag">
             <h1 class="temp">22°c</h1>
             <h2 class="city">sumerpur</h2>
             <div class="details">
                 <div class="col">
-                    <img id="imgs" src="images/wind.png" alt="">
+                    <img id="imgs" src="wind.png" alt="">
                     <div>
                         <p class="Humidity">99%</p>
                         <p>Humidity</p>
                     </div>
                 </div>
                 <div class="col">
-                    <img id="imgs" src="images/Humidity.png" alt="">
+                    <img id="imgs" src="Humidity.png" alt="">
                     <div>
                         <p class="wind">25 km/h</p>
                         <p>wind</p>
@@ -74,19 +74,19 @@
             document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
 
             if (data.weather[0].main == "Clouds") {
-                im.src = "images/clouds.png"
+                im.src = "clouds.png"
             }
            else if (data.weather[0].main == "Clear") {
-                im.src = "images/clear.png"
+                im.src = "clear.png"
             }
            else if (data.weather[0].main == "Rain") {
-                im.src = "images/rain.png"
+                im.src = "rain.png"
             }
             else if (data.weather[0].main == "Drizzle") {
-                im.src = "images/drizzle.png"
+                im.src = "drizzle.png"
             }
            else if (data.weather[0].main == "Mist") {
-                im.src = "images/mist.png"
+                im.src = "mist.png"
             }
             
             document.querySelector(".weather").style.display = "block";
